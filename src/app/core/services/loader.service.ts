@@ -1,7 +1,7 @@
 import { Injectable, signal } from '@angular/core';
-@Injectable({providedIn:'root'})
+@Injectable({ providedIn: 'root' })
 export class LoaderService {
   public loading = signal(false);
-  show(){ this.loading.set(true); }
-  hide(){ this.loading.set(false); }
+  show() { this.loading.set(true); }
+  hide() { this.loading.set(false); }
 }
