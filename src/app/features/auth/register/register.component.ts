@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
+import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from '../../../core/services/auth.service';
 import { ToastService } from '../../../core/services/toast.service';
@@ -54,9 +54,9 @@ import { ToastService } from '../../../core/services/toast.service';
 })
 export class RegisterComponent {
   f = this.fb.group({
-    name: [''],
-    email: [''],
-    password: ['']
+    name: ['',Validators.required],
+    email: ['',Validators.required],
+    password: ['',Validators.required]
   });
 
   constructor(

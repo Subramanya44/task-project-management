@@ -8,9 +8,11 @@ export class TaskService {
 
   private _data: Task[] = [
     { id: 1, projectId: 1, title: 'Design UI', status: 'todo' },
-    { id: 2, projectId: 1, title: 'API Integration', status: 'inprogress' },
-    { id: 3, projectId: 1, title: 'Write tests', status: 'done' },
-    { id: 4, projectId: 2, title: 'Set up DB', status: 'todo' }
+    { id: 2, projectId: 1, title: 'APIs ', status: 'inprogress' },
+    { id: 3, projectId: 1, title: 'API Integration', status: 'inprogress' },
+    { id: 4, projectId: 1, title: 'tests', status: 'done' },
+    { id: 5, projectId: 1, title: 'Write tests', status: 'done' },
+    { id: 6, projectId: 2, title: 'Set up DB', status: 'todo' }
   ];
 
   public tasks = signal<Task[]>(this._data);
