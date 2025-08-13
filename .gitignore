@@ -1,0 +1,23 @@
+# Angular build output
+dist/
+.tmp/
+out-tsc/
+
+# Angular cache
+.angular/
+
+# Node modules
+node_modules/
+
+# IDE / Editor settings
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log
+yarn-error.log
+
