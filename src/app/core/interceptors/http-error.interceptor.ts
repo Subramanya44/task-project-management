@@ -11,8 +11,6 @@ export const httpErrorInterceptor: HttpInterceptorFn = (req, next) => {
   return next(req).pipe(
     catchError(error => {
       console.error('HTTP Error:', error);
-
-      // Handle based on status code
       switch (error.status) {
         case 0:
           toast.push('Unable to connect to the server. Please check your network.');

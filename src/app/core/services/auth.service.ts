@@ -24,7 +24,6 @@ export class AuthService {
   }
 
   login(email: string, password: string) {
-    // check email + password
     const user = this.users.find(u => u.email === email && u.password === password);
     return of(user || null).pipe(
       delay(400),
